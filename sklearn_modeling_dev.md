@@ -26,7 +26,8 @@ META: Picking up where we left off in pcda class. Leverages recently learned top
   - the leaf classification problem, with modifications, is perfect for this
   - add a bit of numpy and pandas review (with pointers to the JVP stuff)
   - shows basic sklearn API (without pipelines) for quick modeling
-  - basic voting classifier
+  - meta bagging and voting classifiers
+  - random forest as an ensemble model
       + **TODO** Screencast for the leaf notebook
 
 * Introduce interesting classification problem - Pump It Up
@@ -42,11 +43,8 @@ META: Picking up where we left off in pcda class. Leverages recently learned top
   - evaluate via cross-validation
   - predict on new data
   - evaluate for predictive accuracy using multiple metrics
-* Model building 2 - ensemble methods
-  - meta bagging and voting classifiers
-  - random forest as an ensemble model
 * Building a modeling pipeline
-* Deploying model as web service or in some other way (?)
+* Deploying model as web service or in some other way (?) - binderizing might be good fit
 
 ## Introduce interesting classification problem
 
