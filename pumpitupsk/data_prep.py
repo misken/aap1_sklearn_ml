@@ -35,8 +35,7 @@ for key in dict_df:
     df = df.loc[:, cols_to_keep]
 
 
-    # Change to type categorical
-
+    # Change booleans to strings
     df["permit"] = df["permit"].astype("string")
     df["public_meeting"] = df["public_meeting"].astype("string")
 
@@ -47,15 +46,12 @@ for key in dict_df:
     df['scheme_management'] = df['scheme_management'].fillna("missing")
     df['permit'] = df['permit'].fillna("missing")
 
-    categorical_cols = df.select_dtypes(include=['object', 'category']).columns.tolist()
 
     # Factor level lumping
 
     df['funder'] = fct_lump(df['funder'], n=10)
     df['installer'] = fct_lump(df['installer'], n=10)
     df['scheme_management'] = fct_lump(df['scheme_management'], n=10)
-
-    # df.loc[:, categorical_cols] = df.loc[:, categorical_cols].astype('category')
     
     df.to_json(f"data/{key}.json", orient='records')
     df.to_csv(f"data/{key}.csv", index=False)

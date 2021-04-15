@@ -6,8 +6,7 @@ import pickle
 
 from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
-from sklearn.impute import SimpleImputer
-from sklearn.preprocessing import StandardScaler, OneHotEncoder, OrdinalEncoder
+from sklearn.preprocessing import StandardScaler, OneHotEncoder
 from sklearn.linear_model import LogisticRegression, LogisticRegressionCV
 from sklearn.model_selection import train_test_split, GridSearchCV
 
@@ -56,7 +55,7 @@ for penalty in ['l1', 'l2', 'elasticnet']:
     # Store fitted model
     models_clf[penalty] = deepcopy(lr_clf)
 
-# TODO: Fix me. Needs to be file object.
+# Create a pickle object containing all the fitted models
 
 with open("output/models_clf.pkl", "wb") as model_file:
     pickle.dump(models_clf, model_file)

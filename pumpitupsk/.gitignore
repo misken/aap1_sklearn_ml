@@ -1,6 +1,9 @@
 # Ignore html in notebooks
 notebooks/*.html
 
+data/*.csv
+data/*.json
+data/raw/
 
 # Ignore out/tmp directories
 tmp/

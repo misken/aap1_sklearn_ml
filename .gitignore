@@ -1,6 +1,9 @@
 # Ignore html in notebooks
 notebooks/*.html
 
+pumpitupsk/data/*.csv
+pumpitupsk/data/*.json
+pumpitupsk/data/raw/
 
 # Ignore out/tmp directories
 tmp/
