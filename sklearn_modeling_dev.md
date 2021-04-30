@@ -10,12 +10,12 @@ META: Picking up where we left off in pcda class. Leverages recently learned top
 * Bagged and boosted trees and general ensemble models
 
 ### Software engineering objectives
-* Basics of conda virtual environments
+
 * project structure (e.g. Cookiecutter data science)
 * Version control with git and GitHub
 * Good notebook practices
 * Analysis pipelines 
-* Deploy via web API or just hosted notebook
+* Deploy via hosted notebook
 
 
 
@@ -45,6 +45,10 @@ META: Picking up where we left off in pcda class. Leverages recently learned top
   - evaluate for predictive accuracy using multiple metrics
 * Building a modeling pipeline
 * Deploying model as web service or in some other way (?) - binderizing might be good fit
+  - see projects/pumpitup_share and GitHub repo of same name
+  - readme file has Binder URL
+  - https://www.dataschool.io/cloud-services-for-jupyter-notebook/ for evaluation of options
+  - need to incorporate this activity and create tutorial
 
 ## Introduce interesting classification problem
 

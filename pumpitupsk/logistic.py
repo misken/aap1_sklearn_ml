@@ -10,11 +10,6 @@ from sklearn.preprocessing import StandardScaler, OneHotEncoder
 from sklearn.linear_model import LogisticRegression, LogisticRegressionCV
 from sklearn.model_selection import train_test_split, GridSearchCV
 
-# explicitly require this experimental feature
-from sklearn.experimental import enable_hist_gradient_boosting  # noqa
-# now you can import normally from ensemble
-from sklearn.ensemble import HistGradientBoostingClassifier
-
 # Read data
 train_X = pd.read_csv('./data/train_x.csv')
 train_y = pd.read_csv("./data/raw/train_y.csv")
